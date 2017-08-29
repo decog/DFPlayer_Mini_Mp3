@@ -26,9 +26,10 @@ bool playStarted = false;
 void loop () {
   if(!playStarted)
   {
-    mp3_play (1);
-    delay (6000);
-    mp3_next ();
+    mp3_play_physical(1);
+    delay(1000);
+    mp3_play_physical(5);
+    delay(1000);
     playStarted = true;
   }
 
